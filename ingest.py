@@ -34,8 +34,7 @@ def load_documents():
 # Optional: Add web pages here
 def load_web_docs():
     urls = [
-        # Example:
-        # "https://langchain.com"
+    "https://en.wikipedia.org/wiki/Generative_artificial_intelligence"
     ]
 
     if not urls:
