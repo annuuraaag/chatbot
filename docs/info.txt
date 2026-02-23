@@ -1,0 +1,257 @@
+LangGraph is a framework for building stateful AI workflows using large language models.
+It enables dynamic routing, multi-step reasoning, and tool integration.
+
+Retrieval-Augmented Generation (RAG) combines document retrieval with language models
+to produce grounded and factual responses.
+
+ 
+Java: Programming Language, Platform, and Technology 
+Java as a Programming Language: 
+• Java allows writing programs. 
+Platform: 
+• A software or hardware environment in which a program runs. 
+• C compiler converts Unicode to bit code; Java compiler converts Unicode 
+to byte code. 
+Java Virtual Machine (JVM): 
+• JVM converts byte code into bit code via an interpreter. 
+• JVM is platform-specific: Windows JVM for Windows, Linux JVM for 
+Linux, etc. 
+Translation Software: 
+• Compiler: Converts the whole program at once and produces a file. 
+• Interpreter: Converts the program line by line without producing a file. 
+Platform Dependency: 
+• C: Platform-dependent. 
+• Java: Platform-independent; Java programs can run on any platform due 
+to the JVM. 
+Java API and JRE: 
+• Java API: Interface between applications and programming language. 
+• JRE: Contains JVM and Java API. 
+• JDK: Java Development Kit, includes JRE. The latest version is JDK 21. 
+History: 
+• Developed in 1995 by James Gosling, Patrick Naughton, Ed Frank, Chris 
+Warth, and Mike Sheridan at Sun Microsystems (now Oracle). 
+• Slogan: “Write Once, Run Anywhere (WORA)”. 
+ 
+ 
+Identifiers 
+Definition: 
+• Identifiers are used to name variables, methods, classes, interfaces, 
+packages, etc. 
+Rules: 
+1. Formed using letters (A-Z, a-z), digits (0-9), underscore (_), and dollar 
+sign ($). 
+2. Must begin with a letter, underscore, or dollar sign. 
+3. No length limit. 
+4. No special symbols other than underscore(_) and dollar sign($). 
+5. No white space characters. 
+Examples: 
+• Valid: demo, Demo, DEMO, Demo2, version$2, version_2, _5_, _$2, 
+$_2 
+• Invalid: 2ndDemo, version#2, version-2, 5_$ 
+ 
+Keywords 
+Definition: 
+• Reserved words in the Java language. 
+Examples: 
+• int, char, float, double, if, else, while, for, do, private, protected, public, 
+static, final, void, assert, enum, class, interface, package. 
+Notes: 
+• Keywords must be in lowercase. 
+• strictfp (JDK 1.2), assert (JDK 1.4), enum (JDK 1.5). 
+• const and goto are not in use. 
+• Keywords cannot be used as identifiers. 
+ 
+Literals 
+Definition: 
+• Fixed value representations in source code. 
+Categories: 
+1. Integer Literals: 5, 9, 13, 467, 0, -2, -98, -987 
+2. Floating Point Literals: 2.46, 0.08, -2.46, -999.3566 
+3. Character Literals: 'a', 'x', 'A', 'Z', 'c' 
+4. String Literals: "a", "hi", "hello", "welcome" 
+5. Boolean Literals: true, false 
+6. Object Literal: null 
+Notes: 
+• true, false, and null are not keywords and cannot be used as identifiers. 
+ 
+Data Types 
+Definition: 
+• Determines the value a variable can hold and the operations on variables. 
+Categories: 
+1. Primitive Data Types: Predefined types named by keywords. 
+o Integers: byte, short, int, long 
+o Floating Points: float, double 
+o Characters: char 
+o Boolean: boolean 
+2. Reference Data Types: Arrays, Strings, Classes, Interfaces, etc. 
+ 
+ 
+ 
+ 
+Variables 
+Definition: 
+• Containers that hold data. 
+Declaration: 
+• Syntax: DataType Variable; 
+• Example: int x; 
+Assignment: 
+• Syntax: Variable = Literal; 
+• Example: x = 10; 
+ 
+Initialization: 
+• Syntax: DataType Variable = Literal; 
+• Example: int x = 10; 
+ 
+Notes: 
+• Long literals must be suffixed with l or L. 
+• Float literals must be suffixed with f or F. 
+• ASCII Code: Digits start at 48, capital letters at 65, and small letters at 
+97. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Type Conversions in Java 
+Boolean Type: 
+• Cannot be converted to or from other types. 
+Implicit Conversions (Widening Conversions): 
+• System performs these automatically. 
+• Total: 19 
+o byte: to short, int, long, float, double (5) 
+o short: to int, long, float, double (4) 
+o int: to long, float, double (3) 
+o long: to float, double (2) 
+o float: to double (1) 
+o char: to int, long, float, double (4) 
+Explicit Conversions (Narrowing Conversions): 
+• Must be done by the programmer. 
+• Total: 23 
+o byte: to char (1) 
+o short: to byte, char (2) 
+o int: to byte, short, char (3) 
+o long: to byte, short, int, char (4) 
+o float: to byte, short, int, long, char (5) 
+o double: to byte, short, int, long, float, char (6) 
+o char: to byte, short (2) 
+Operations on Data: 
+1. (byte, short, int, char) + (byte, short, int, 
+char) => int 
+2. (byte, short, int, long, char) + long => long 
+3. (byte, short, int, long, float, char) + float => 
+float 
+4. (byte, short, int, long, float, double, char) + 
+double => double 
+• Note: Operations cannot be performed on boolean types. 
+ 
+Source File Declaration Rules: 
+1. Only one public class per source file. 
+2. Any number of non-public classes allowed. 
+3. If a public class is present, the file name must match the public class 
+name. 
+4. No naming restrictions if there is no public class. 
+Java Program Structure: 
+class Demo { 
+    public static void main(String args[]) { 
+       System.out.println("Welcome to Java First Program"); 
+    } 
+} 
+String and System classes are part of the java.lang package, imported 
+by default. 
+ 
+Compilation and Execution: 
+• Compilation: 
+C:\>javac Demo.java 
+o Generates .class file for each class in the source file. 
+ 
+• Execution: 
+C:\>java Demo 
+o Only the class with the main() method can be used to execute the 
+program. 
+ 
+ 
+Java Operators 
+Operators: Special symbols that operate on data, categorized by their 
+operations. 
+1) Arithmetic Operators 
+• Addition (+): Adds values. 
+• Subtraction (-): Subtracts values. 
+• Multiplication (*): Multiplies values. 
+• Division (/): Divides values, returns quotient. 
+• Modulo (%): Divides values, returns remainder. 
+2) Relational Operators 
+• <: Less than 
+• >: Greater than 
+• <=: Less than or equal to 
+• >=: Greater than or equal to 
+• ==: Equals to 
+• !=: Not equals to 
+Returns boolean values. 
+3) Logical Operators 
+• &&: Logical AND 
+• ||: Logical OR 
+• !: Logical NOT 
+Types of Operators 
+1. Unary Operator: Operates on one operand (e.g., ++a, a--, !a). 
+2. Binary Operator: Operates on two operands (e.g., a + b, a > b). 
+3. Ternary Operator: Operates on three operands (e.g., condition ? expr1 : 
+expr2). 
+4) Increment & Decrement Operators 
+• Increment (++): Increases value by 1. 
+• Decrement (--): Decreases value by 1. 
+5) Bitwise Operators 
+• & : Bitwise AND 
+• | : Bitwise OR 
+• ^ : Bitwise XOR 
+• << : Left Shift 
+• >> : Right Shift 
+• ~ : Bitwise NOT 
+6) Assignment Operators 
+• = : Normal assignment 
+• += : Add and assign (a += b  →  a = a + b) 
+• -= : Subtract and assign (a -= b  →  a = a - b) 
+• *= : Multiply and assign (a *= b  →  a = a * b) 
+• /= : Divide and assign (a /= b  →  a =  a / b) 
+• %= : Modulo and assign (a %= b  →  a = a % b) 
+• &=, |=, ^=, <<=, >>= : Bitwise operations and assign 
+7) Conditional Operator (?:) 
+Used to express conditions. 
+8) Unary Plus & Unary Minus Operators 
+• + : Unary Plus (no effect, indicates positive value) 
+• - : Unary Minus (negates the value) 
+9) Other Operators 
+• []  : Array access operator 
+• () : Type cast operator 
+• instanceof : Checks if an object is an instance of a class 
+• . : Member selection operator 
+• () : Method call operator 
+Java Statements 
+Java statements are categorized into three main types: 
+1) Selection Statements 
+• if Statement: Executes a block of code if a condition is true. 
+• if-else Statement: Executes one block of code if a condition is true and 
+another if it is false. 
+• if-else if-else Statement: Checks multiple conditions, executing 
+corresponding blocks of code. 
+• Nested if Statement: An if statement inside another if statement. 
+• switch Statement: Selects one of many code blocks to be executed. 
+2) Iteration Statements (Loops) 
+• while loop: Repeats a block of code while a condition is true. 
+• do-while loop: Executes a block of code once, and then repeats it while a 
+condition is true. 
+• for loop: Repeats a block of code a specified number of times. 
+• Enhanced for loop (for-each): Iterates over elements of an array or a 
+collection. 
+• Nested loops: Loops within loops. 
+3) Jump Statements 
+• break Statement: Exits a loop or switch statement. 
+• break LABEL Statement: Exits an outer loop. 
+• continue Statement: Skips the current iteration of a loop and proceeds 
+with the next iteration. 
+• continue LABEL Statement: Skips the current iteration of an outer loop. 
+• return Statement: Exits from the current method and optionally returns a 
+value. 
+These structured statements allow for controlling the flow of execution in a Java 
+program effectively. 
